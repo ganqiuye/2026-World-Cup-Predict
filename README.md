@@ -29,9 +29,22 @@ python3 scripts/inject_dashboard.py
 
 浏览器打开 `dashboard/index.html`（纯静态，可离线）。
 
-### 3. 晋级路线图
+### 3. 全景树
+****<img width="1252" height="1096" alt="QQ_1782290117434" src="https://github.com/user-attachments/assets/9ec4d3f1-2990-46e0-b757-44dfb90600c9" />
+
+### 4. 晋级路线图
 
 在仪表盘「晋级路线图」区块选择球队，可对本队下场及**同组同时/更早开球**的场次切换胜/平/负假设，模拟出线与淘汰赛路径。
+<img width="2510" height="1074" alt="QQ_1782289989282" src="https://github.com/user-attachments/assets/758d8aa9-b485-49a6-8fe3-e9290f95e8db" />
+
+### 5. 当天预测结果
+<img width="2133" height="858" alt="QQ_1782290177608" src="https://github.com/user-attachments/assets/7a0dbff5-cbb6-4e37-9572-722afb4fbf13" />
+
+### 6. 预测分析
+<img width="408" height="1261" alt="QQ_1782290213801" src="https://github.com/user-attachments/assets/aabe69ee-fc9f-46b5-9197-04003f96b45d" />
+
+
+
 
 ## 目录结构
 
