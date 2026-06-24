@@ -1,0 +1,35 @@
+{
+  "edition": "2026 FIFA World Cup",
+  "host": ["USA", "Canada", "Mexico"],
+  "format": {
+    "teams": 48,
+    "groups": 12,
+    "teams_per_group": 4,
+    "advance_per_group": 2,
+    "best_third_places": 8,
+    "knockout_from": 32
+  },
+  "tiebreakers": ["points", "goal_difference", "goals_scored", "head_to_head", "fair_play", "drawing"],
+  "groups": {
+    "A": ["Mexico", "South Africa", "South Korea", "UEFA Path D"],
+    "B": ["Canada", "Qatar", "Switzerland", "UEFA Path A"],
+    "C": ["Brazil", "Morocco", "Haiti", "Scotland"],
+    "D": ["USA", "Paraguay", "Australia", "UEFA Path C"],
+    "E": ["Germany", "Japan", "Spain", "Costa Rica"],
+    "F": ["France", "Peru", "Nigeria", "New Zealand"],
+    "G": ["England", "Iran", "Panama", "Senegal"],
+    "H": ["Argentina", "Saudi Arabia", "Poland", "Ecuador"],
+    "I": ["Portugal", "Tunisia", "Colombia", "Curaçao"],
+    "J": ["Netherlands", "Egypt", "Uzbekistan", "Ivory Coast"],
+    "K": ["Belgium", "Algeria", "Austria", "Jordan"],
+    "L": ["Uruguay", "Cape Verde", "Croatia", "Ghana"]
+  },
+  "venues": [
+    { "city": "Los Angeles", "stadium": "SoFi Stadium", "country": "USA" },
+    { "city": "New York", "stadium": "MetLife Stadium", "country": "USA" },
+    { "city": "Mexico City", "stadium": "Estadio Azteca", "country": "Mexico" },
+    { "city": "Toronto", "stadium": "BMO Field", "country": "Canada" },
+    { "city": "Dallas", "stadium": "AT&T Stadium", "country": "USA" },
+    { "city": "Miami", "stadium": "Hard Rock Stadium", "country": "USA" }
+  ]
+}

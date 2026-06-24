@@ -1,0 +1,20 @@
+{
+  "data_as_of": "2026-06-23T13:09:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "source": "网易体育、Sportstar、worldcup2026cn.com",
+  "golden_boot": [
+    { "rank": 1, "player": "Lionel Messi", "team": "Argentina", "team_code": "ARG", "goals": 5, "pressure": 0.35, "note": "已破历史射手纪录，末轮战约旦刷数据动力下降" },
+    { "rank": 2, "player": "Kylian Mbappé", "team": "France", "team_code": "FRA", "goals": 4, "pressure": 0.92, "note": "与哈兰德并列金靴，末轮直接对话" },
+    { "rank": 2, "player": "Erling Haaland", "team": "Norway", "team_code": "NOR", "goals": 4, "pressure": 0.90, "note": "2场4球，末轮对法国" },
+    { "rank": 4, "player": "Cristiano Ronaldo", "team": "Portugal", "team_code": "POR", "goals": 4, "pressure": 0.82, "note": "6/24 梅开二度，舆论反弹后禁用G收手" },
+    { "rank": 5, "player": "Harry Kane", "team": "England", "team_code": "ENG", "goals": 2, "pressure": 0.70, "note": "对加纳需巩固小组头名" },
+    { "rank": 6, "player": "Luis Díaz", "team": "Colombia", "team_code": "COL", "goals": 2, "pressure": 0.65, "note": "哥伦比亚进攻核心" }
+  ],
+  "golden_ball_contenders": [
+    { "player": "Lionel Messi", "team_code": "ARG", "heat": 0.95, "note": "卫冕冠军核心，2场5球" },
+    { "player": "Kylian Mbappé", "team_code": "FRA", "heat": 0.88 },
+    { "player": "Erling Haaland", "team_code": "NOR", "heat": 0.82 },
+    { "player": "Lamine Yamal", "team_code": "ESP", "heat": 0.78 },
+    { "player": "Harry Kane", "team_code": "ENG", "heat": 0.72 }
+  ]
+}
