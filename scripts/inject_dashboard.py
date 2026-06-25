@@ -11,7 +11,7 @@ HTML_FILE = ROOT / "dashboard" / "index.html"
 
 FILES = ["tournament.json", "schedule.json", "standings.json", "predictions.json",
          "team-strength.json", "knockout-bracket.json"]
-OPTIONAL = ["players.json"]
+OPTIONAL = ["players.json", "team-profiles.json"]
 KEY_MAP = {
     "tournament.json": "tournament",
     "schedule.json": "schedule",
@@ -20,6 +20,7 @@ KEY_MAP = {
     "team-strength.json": "teamStrength",
     "knockout-bracket.json": "knockoutBracket",
     "players.json": "players",
+    "team-profiles.json": "teamProfiles",
 }
 
 

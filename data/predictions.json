@@ -1,803 +1,21 @@
 {
-  "generated_at": "2026-06-24T12:16:00+08:00",
+  "generated_at": "2026-06-25T20:00:00+08:00",
   "timezone": "Asia/Shanghai",
-  "data_source": "网易体育、worldcup2026cn.com、calibration v2.1",
+  "data_source": "worldcup2026cn.com、联合报、winsports.tw",
   "phase": "group_r3",
   "window": {
-    "from": "2026-06-25",
+    "from": "2026-06-26",
     "to": "2026-06-26"
   },
   "weight_formula": "0.28×实力 + 0.28×博弈(F+Q) + 0.20×协同 + 0.08×路径 + 0.11×球员 + 0.05×外部 + 0.10×转化(M)",
-  "backtest_2026_06_24": {
-    "summary": "胜平负 75% (3/4); v2低估L+O导致葡萄牙5-0; 英格兰0-0未触发B+",
-    "results": [
-      {
-        "id": "2026-GROUP-K-R2-POR-UZB",
-        "predicted": "3-0",
-        "actual": "5-0",
-        "wdl_ok": true
-      },
-      {
-        "id": "2026-GROUP-L-R2-ENG-GHA",
-        "predicted": "2-1",
-        "actual": "0-0",
-        "wdl_ok": false
-      },
-      {
-        "id": "2026-GROUP-L-R2-PAN-CRO",
-        "predicted": "0-2",
-        "actual": "0-1",
-        "wdl_ok": true
-      },
-      {
-        "id": "2026-GROUP-K-R2-COL-COD",
-        "predicted": "2-0",
-        "actual": "1-0",
-        "wdl_ok": true
-      }
-    ]
-  },
   "matches": [
     {
-      "id": "2026-GROUP-B-R3-SUI-CAN",
-      "home": "Switzerland",
-      "away": "Canada",
-      "home_code": "SUI",
-      "away_code": "CAN",
-      "group": "B",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T03:00:00+08:00",
-      "venue": "BC Place, Vancouver",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "game_theory",
-      "confidence": 4,
-      "prediction": {
-        "most_likely_score": "1-1",
-        "most_likely_probability": 24.5,
-        "pure_strength_score": "1-0",
-        "game_theory_score": "1-1",
-        "score_distribution": [
-          {
-            "score": "1-1",
-            "probability": 24.5,
-            "reason": "F+H默契平局"
-          },
-          {
-            "score": "0-0",
-            "probability": 18.2,
-            "reason": "极端保守"
-          },
-          {
-            "score": "1-0",
-            "probability": 16.8,
-            "reason": "瑞士小胜"
-          },
-          {
-            "score": "0-1",
-            "probability": 14.1,
-            "reason": "加拿大反击"
-          },
-          {
-            "score": "2-1",
-            "probability": 11.3,
-            "reason": "若波黑大胜需抢分"
-          },
-          {
-            "score": "1-2",
-            "probability": 8.4,
-            "reason": "对攻"
-          },
-          {
-            "score": "2-0",
-            "probability": 4.7,
-            "reason": "瑞士实力"
-          },
-          {
-            "score": "0-2",
-            "probability": 2.0,
-            "reason": "加拿大爆冷"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 38.2,
-          "draw": 42.7,
-          "away": 19.1
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 22,
-        "game_theory_pct": 38,
-        "synergy_pct": 28,
-        "path_pct": 4,
-        "player_pct": 3,
-        "external_pct": 3,
-        "conversion_pct": 2
-      },
-      "analysis": {
-        "scenario": [
-          "B",
-          "H",
-          "F"
-        ],
-        "scenario_summary": "瑞士与加拿大同积4分且净胜球占优，R3同开最可能默契平局携手出线",
-        "game_theory_adjustment": "F+H：若双方平局则各4分大概率同组前二；加拿大GD虽高但平局仍安全",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：若波黑意外赢卡塔尔3球+，则瑞士/加拿大需争胜——本预测基准为默契1-1",
-        "synergy_scenarios": "F：若波黑意外赢卡塔尔3球+，则瑞士/加拿大需争胜——本预测基准为默契1-1",
-        "steps_summary": {
-          "step1": "Elo接近，纯实力1-0",
-          "step2": "B+H+F三重，平局+24.5%",
-          "step3": "双方控场不冒险",
-          "step4": "温哥华主场略利加拿大",
-          "step5": "v2.1 R3协同权重20%",
-          "step6": "F：波黑-Qatar平行场影响第三名",
-          "step7": "置信度4"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-B-R3-BIH-QAT",
-      "home": "Bosnia and Herzegovina",
-      "away": "Qatar",
-      "home_code": "BIH",
-      "away_code": "QAT",
-      "group": "B",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T03:00:00+08:00",
-      "venue": "Lumen Field, Seattle",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "strength",
-      "confidence": 3,
-      "prediction": {
-        "most_likely_score": "2-0",
-        "most_likely_probability": 21.8,
-        "pure_strength_score": "2-1",
-        "game_theory_score": "2-0",
-        "score_distribution": [
-          {
-            "score": "2-0",
-            "probability": 21.8,
-            "reason": "A必须赢+实力"
-          },
-          {
-            "score": "2-1",
-            "probability": 19.4,
-            "reason": "赢球但有失球"
-          },
-          {
-            "score": "1-0",
-            "probability": 17.2,
-            "reason": "经济型小胜"
-          },
-          {
-            "score": "3-0",
-            "probability": 12.6,
-            "reason": "刷净胜球"
-          },
-          {
-            "score": "1-1",
-            "probability": 11.8,
-            "reason": "久攻不下"
-          },
-          {
-            "score": "0-0",
-            "probability": 8.1,
-            "reason": "僵局"
-          },
-          {
-            "score": "3-1",
-            "probability": 5.4,
-            "reason": "对攻"
-          },
-          {
-            "score": "0-1",
-            "probability": 3.7,
-            "reason": "冷门"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 58.4,
-          "draw": 19.9,
-          "away": 21.7
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 35,
-        "game_theory_pct": 30,
-        "synergy_pct": 18,
-        "path_pct": 5,
-        "player_pct": 4,
-        "external_pct": 3,
-        "conversion_pct": 5
-      },
-      "analysis": {
-        "scenario": [
-          "A",
-          "F"
-        ],
-        "scenario_summary": "波黑必须赢球才可能争最佳第三，卡塔尔已出局但或阻截",
-        "game_theory_adjustment": "A生死战+F：波黑需大胜才可能追净胜球；卡塔尔无出线压力或送分",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：与SUI-CAN平行，若前者1-1则波黑须赢且尽量刷净胜球",
-        "synergy_scenarios": "F：与SUI-CAN平行，若前者1-1则波黑须赢且尽量刷净胜球",
-        "steps_summary": {
-          "step1": "波黑实力略优",
-          "step2": "A+F",
-          "step3": "波黑压上",
-          "step4": "西雅图",
-          "step5": "2-0",
-          "step6": "F关联瑞士加拿大",
-          "step7": "置信度3"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-C-R3-SCO-BRA",
-      "home": "Scotland",
-      "away": "Brazil",
-      "home_code": "SCO",
-      "away_code": "BRA",
-      "group": "C",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T06:00:00+08:00",
-      "venue": "Hard Rock Stadium, Miami",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "game_theory",
-      "confidence": 3,
-      "prediction": {
-        "most_likely_score": "1-1",
-        "most_likely_probability": 20.6,
-        "pure_strength_score": "0-2",
-        "game_theory_score": "1-1",
-        "score_distribution": [
-          {
-            "score": "1-1",
-            "probability": 20.6,
-            "reason": "巴西轮换+苏格兰死守"
-          },
-          {
-            "score": "0-1",
-            "probability": 18.4,
-            "reason": "巴西经济型胜"
-          },
-          {
-            "score": "0-2",
-            "probability": 17.2,
-            "reason": "纯实力"
-          },
-          {
-            "score": "1-2",
-            "probability": 14.8,
-            "reason": "苏格兰进球仍败"
-          },
-          {
-            "score": "0-0",
-            "probability": 12.1,
-            "reason": "巴西收手"
-          },
-          {
-            "score": "1-0",
-            "probability": 8.3,
-            "reason": "苏格兰大冷"
-          },
-          {
-            "score": "2-2",
-            "probability": 5.2,
-            "reason": "对攻"
-          },
-          {
-            "score": "0-3",
-            "probability": 3.4,
-            "reason": "巴西全开"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 13.5,
-          "draw": 32.7,
-          "away": 53.8
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 30,
-        "game_theory_pct": 32,
-        "synergy_pct": 22,
-        "path_pct": 6,
-        "player_pct": 4,
-        "external_pct": 3,
-        "conversion_pct": 3
-      },
-      "analysis": {
-        "scenario": [
-          "A",
-          "C",
-          "I",
-          "F"
-        ],
-        "scenario_summary": "苏格兰必须抢分；巴西4分已稳，可能轮换但仍难输",
-        "game_theory_adjustment": "苏格兰A vs 巴西C+I：巴西轮换但替补仍强；F同开摩洛哥-海地若平局则苏格兰更急",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：摩洛哥vs海地结果影响苏格兰是否必须赢",
-        "synergy_scenarios": "F：摩洛哥vs海地结果影响苏格兰是否必须赢",
-        "steps_summary": {
-          "step1": "纯实力0-2",
-          "step2": "巴西轮换→1-1可能",
-          "step3": "苏格兰主场气势",
-          "step4": "迈阿密高温",
-          "step5": "博弈修正",
-          "step6": "F：摩洛哥场平行",
-          "step7": "置信度3"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-C-R3-MAR-HAI",
-      "home": "Morocco",
-      "away": "Haiti",
-      "home_code": "MAR",
-      "away_code": "HAI",
-      "group": "C",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T06:00:00+08:00",
-      "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "balanced",
-      "confidence": 4,
-      "prediction": {
-        "most_likely_score": "2-0",
-        "most_likely_probability": 23.4,
-        "pure_strength_score": "2-0",
-        "game_theory_score": "1-1",
-        "score_distribution": [
-          {
-            "score": "2-0",
-            "probability": 23.4,
-            "reason": "实力+海地出局"
-          },
-          {
-            "score": "1-0",
-            "probability": 21.2,
-            "reason": "经济型胜"
-          },
-          {
-            "score": "1-1",
-            "probability": 16.8,
-            "reason": "F+B收手"
-          },
-          {
-            "score": "3-0",
-            "probability": 12.4,
-            "reason": "刷净胜球"
-          },
-          {
-            "score": "2-1",
-            "probability": 10.6,
-            "reason": "对攻"
-          },
-          {
-            "score": "0-0",
-            "probability": 7.8,
-            "reason": "极端保守"
-          },
-          {
-            "score": "3-1",
-            "probability": 5.2,
-            "reason": "大开"
-          },
-          {
-            "score": "0-1",
-            "probability": 2.6,
-            "reason": "冷门"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 72.8,
-          "draw": 16.8,
-          "away": 10.4
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 38,
-        "game_theory_pct": 28,
-        "synergy_pct": 20,
-        "path_pct": 5,
-        "player_pct": 4,
-        "external_pct": 3,
-        "conversion_pct": 2
-      },
-      "analysis": {
-        "scenario": [
-          "B",
-          "F"
-        ],
-        "scenario_summary": "摩洛哥4分打平即出线；海地已淘汰",
-        "game_theory_adjustment": "F：若苏格兰-巴西平局且摩洛哥平局→双方4分携手；摩洛哥更倾向控分2-0或1-1",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：与苏格兰-巴西同开，摩洛哥观望后者比分后保守",
-        "synergy_scenarios": "F：与苏格兰-巴西同开，摩洛哥观望后者比分后保守",
-        "steps_summary": {
-          "step1": "摩洛哥实力优",
-          "step2": "B+F",
-          "step3": "控场",
-          "step4": "亚特兰大",
-          "step5": "2-0",
-          "step6": "F平行",
-          "step7": "4"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-A-R3-CZE-MEX",
-      "home": "Czechia",
-      "away": "Mexico",
-      "home_code": "CZE",
-      "away_code": "MEX",
-      "group": "A",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T09:00:00+08:00",
-      "venue": "Estadio Azteca, Mexico City",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "strength",
-      "confidence": 4,
-      "prediction": {
-        "most_likely_score": "0-2",
-        "most_likely_probability": 22.1,
-        "pure_strength_score": "0-2",
-        "game_theory_score": "1-1",
-        "score_distribution": [
-          {
-            "score": "0-2",
-            "probability": 22.1,
-            "reason": "墨西哥替补仍强"
-          },
-          {
-            "score": "0-1",
-            "probability": 20.4,
-            "reason": "经济型"
-          },
-          {
-            "score": "1-2",
-            "probability": 16.8,
-            "reason": "捷克进球仍败"
-          },
-          {
-            "score": "1-1",
-            "probability": 14.2,
-            "reason": "墨西哥收手"
-          },
-          {
-            "score": "0-3",
-            "probability": 11.6,
-            "reason": "大胜"
-          },
-          {
-            "score": "1-0",
-            "probability": 7.8,
-            "reason": "捷克冷门"
-          },
-          {
-            "score": "2-2",
-            "probability": 4.6,
-            "reason": "对攻"
-          },
-          {
-            "score": "0-0",
-            "probability": 2.5,
-            "reason": "双方保守"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 12.4,
-          "draw": 16.7,
-          "away": 70.9
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 42,
-        "game_theory_pct": 24,
-        "synergy_pct": 16,
-        "path_pct": 4,
-        "player_pct": 5,
-        "external_pct": 5,
-        "conversion_pct": 4
-      },
-      "analysis": {
-        "scenario": [
-          "C",
-          "I"
-        ],
-        "scenario_summary": "墨西哥6分已出线，大概率轮换；捷克必须抢分",
-        "game_theory_adjustment": "墨西哥C+I轮换，捷克A但客场墨西哥城难度极大",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：与南非-韩国同开，捷克赢也需看别人脸色",
-        "synergy_scenarios": "F：与南非-韩国同开，捷克赢也需看别人脸色",
-        "steps_summary": {
-          "step1": "墨西哥主场强",
-          "step2": "C轮换",
-          "step3": "捷克压上留空档",
-          "step4": "高原主场",
-          "step5": "0-2",
-          "step6": "F：韩国场",
-          "step7": "4"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-A-R3-RSA-KOR",
-      "home": "South Africa",
-      "away": "South Korea",
-      "home_code": "RSA",
-      "away_code": "KOR",
-      "group": "A",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-25T09:00:00+08:00",
-      "venue": "Estadio BBVA, Monterrey",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "balanced",
-      "confidence": 3,
-      "prediction": {
-        "most_likely_score": "1-2",
-        "most_likely_probability": 21.3,
-        "pure_strength_score": "1-1",
-        "game_theory_score": "1-2",
-        "score_distribution": [
-          {
-            "score": "1-2",
-            "probability": 21.3,
-            "reason": "韩国实力+A"
-          },
-          {
-            "score": "0-2",
-            "probability": 18.6,
-            "reason": "韩国控场"
-          },
-          {
-            "score": "1-1",
-            "probability": 17.4,
-            "reason": "僵局"
-          },
-          {
-            "score": "0-1",
-            "probability": 14.8,
-            "reason": "小胜"
-          },
-          {
-            "score": "2-2",
-            "probability": 10.2,
-            "reason": "对攻平"
-          },
-          {
-            "score": "1-0",
-            "probability": 8.6,
-            "reason": "南非冷"
-          },
-          {
-            "score": "0-0",
-            "probability": 5.8,
-            "reason": "保守"
-          },
-          {
-            "score": "2-1",
-            "probability": 3.3,
-            "reason": "南非胜"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 12.1,
-          "draw": 23.2,
-          "away": 64.7
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 34,
-        "game_theory_pct": 26,
-        "synergy_pct": 22,
-        "path_pct": 6,
-        "player_pct": 4,
-        "external_pct": 4,
-        "conversion_pct": 4
-      },
-      "analysis": {
-        "scenario": [
-          "A",
-          "F",
-          "Q"
-        ],
-        "scenario_summary": "韩国3分必须赢；南非亦需分；Q：第三名竞争",
-        "game_theory_adjustment": "F+Q：A组两场均A性质，韩国略强；最佳第三需跨组比较净胜球",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：捷克-墨西哥结果影响韩国是否可小胜即可",
-        "synergy_scenarios": "F：捷克-墨西哥结果影响韩国是否可小胜即可",
-        "steps_summary": {
-          "step1": "韩国略强",
-          "step2": "双A",
-          "step3": "韩国反击",
-          "step4": "蒙特雷",
-          "step5": "1-2",
-          "step6": "Q第三出线",
-          "step7": "3"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-D-R3-ECU-POL",
+      "id": "2026-GROUP-E-R3-ECU-GER",
       "home": "Ecuador",
-      "away": "Poland",
+      "away": "Germany",
       "home_code": "ECU",
-      "away_code": "POL",
-      "group": "D",
-      "round": "Group Stage R3",
-      "datetime_cst": "2026-06-26T04:00:00+08:00",
-      "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "predicted",
-      "phase": "group_r3",
-      "dominant_factor": "game_theory",
-      "confidence": 3,
-      "prediction": {
-        "most_likely_score": "2-1",
-        "most_likely_probability": 20.8,
-        "pure_strength_score": "2-0",
-        "game_theory_score": "2-1",
-        "score_distribution": [
-          {
-            "score": "2-1",
-            "probability": 20.8,
-            "reason": "A对攻"
-          },
-          {
-            "score": "1-0",
-            "probability": 18.4,
-            "reason": "小胜"
-          },
-          {
-            "score": "2-0",
-            "probability": 16.2,
-            "reason": "实力"
-          },
-          {
-            "score": "1-1",
-            "probability": 15.6,
-            "reason": "平局"
-          },
-          {
-            "score": "3-1",
-            "probability": 11.4,
-            "reason": "刷球"
-          },
-          {
-            "score": "0-1",
-            "probability": 8.2,
-            "reason": "波兰冷"
-          },
-          {
-            "score": "2-2",
-            "probability": 5.8,
-            "reason": "乱战"
-          },
-          {
-            "score": "0-0",
-            "probability": 3.6,
-            "reason": "保守"
-          }
-        ],
-        "win_draw_loss": {
-          "home": 55.2,
-          "draw": 19.2,
-          "away": 25.6
-        }
-      },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 32,
-        "game_theory_pct": 34,
-        "synergy_pct": 20,
-        "path_pct": 5,
-        "player_pct": 4,
-        "external_pct": 3,
-        "conversion_pct": 2
-      },
-      "analysis": {
-        "scenario": [
-          "A",
-          "F"
-        ],
-        "scenario_summary": "厄瓜多尔3分必须赢；波兰1分亦需分",
-        "game_theory_adjustment": "F：与荷兰-沙特同开；荷兰已出线或轮换",
-        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：荷兰若大胜沙特，厄瓜多尔须赢且追净胜球",
-        "synergy_scenarios": "F：荷兰若大胜沙特，厄瓜多尔须赢且追净胜球",
-        "steps_summary": {
-          "step1": "厄瓜多尔略优",
-          "step2": "双A",
-          "step3": "对攻",
-          "step4": "费城",
-          "step5": "2-1",
-          "step6": "F荷兰场",
-          "step7": "3"
-        }
-      },
-      "actual_result": null
-    },
-    {
-      "id": "2026-GROUP-D-R3-NED-SAU",
-      "home": "Netherlands",
-      "away": "Saudi Arabia",
-      "home_code": "NED",
-      "away_code": "SAU",
-      "group": "D",
+      "away_code": "GER",
+      "group": "E",
       "round": "Group Stage R3",
       "datetime_cst": "2026-06-26T04:00:00+08:00",
       "venue": "MetLife Stadium, New York",
@@ -806,314 +24,328 @@
       "dominant_factor": "strength",
       "confidence": 4,
       "prediction": {
-        "most_likely_score": "2-0",
-        "most_likely_probability": 24.2,
-        "pure_strength_score": "3-0",
-        "game_theory_score": "2-0",
+        "most_likely_score": "1-2",
+        "most_likely_probability": 23.6,
+        "pure_strength_score": "0-2",
+        "game_theory_score": "1-2",
         "score_distribution": [
-          {
-            "score": "2-0",
-            "probability": 24.2,
-            "reason": "轮换仍强"
-          },
-          {
-            "score": "3-0",
-            "probability": 19.8,
-            "reason": "纯实力"
-          },
-          {
-            "score": "1-0",
-            "probability": 18.4,
-            "reason": "收手"
-          },
-          {
-            "score": "2-1",
-            "probability": 12.6,
-            "reason": "沙特反击"
-          },
-          {
-            "score": "3-1",
-            "probability": 9.2,
-            "reason": "对攻"
-          },
-          {
-            "score": "1-1",
-            "probability": 7.4,
-            "reason": "保守"
-          },
-          {
-            "score": "0-0",
-            "probability": 5.2,
-            "reason": "全轮换"
-          },
-          {
-            "score": "4-0",
-            "probability": 3.2,
-            "reason": "大开"
-          }
+          { "score": "1-2", "probability": 23.6, "reason": "德国轮换仍强+厄瓜多尔压上" },
+          { "score": "0-2", "probability": 21.4, "reason": "纯实力德国控场" },
+          { "score": "0-1", "probability": 18.2, "reason": "德国经济型胜" },
+          { "score": "1-1", "probability": 14.8, "reason": "德国大幅轮换收手" },
+          { "score": "0-3", "probability": 11.6, "reason": "德国替补仍碾压" },
+          { "score": "1-0", "probability": 6.4, "reason": "厄瓜多尔大冷" },
+          { "score": "2-2", "probability": 2.8, "reason": "对攻乱战" },
+          { "score": "0-0", "probability": 1.2, "reason": "双方保守" }
         ],
-        "win_draw_loss": {
-          "home": 78.6,
-          "draw": 12.6,
-          "away": 8.8
-        }
+        "win_draw_loss": { "home": 9.2, "draw": 16.0, "away": 74.8 }
       },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 45,
-        "game_theory_pct": 22,
-        "synergy_pct": 12,
-        "path_pct": 5,
-        "player_pct": 8,
-        "external_pct": 4,
-        "conversion_pct": 4
-      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 42, "game_theory_pct": 24, "synergy_pct": 14, "path_pct": 4, "player_pct": 6, "external_pct": 4, "conversion_pct": 6 },
       "analysis": {
-        "scenario": [
-          "C",
-          "I"
-        ],
-        "scenario_summary": "荷兰6分已出线，轮换；沙特出局",
-        "game_theory_adjustment": "荷兰C+I轮换2-0收手；F平行厄瓜多尔-波兰不影响荷兰",
+        "scenario": ["A", "C", "I", "F"],
+        "team_profiles": {
+          "home": { "style": "偏防守", "pace": "中", "tags": ["低位防反", "终结效率低"], "summary": "前两轮0进球，末轮必须压上抢分，但压上后后防空档大" },
+          "away": { "style": "偏进攻", "pace": "快", "tags": ["高位逼抢", "两翼提速"], "summary": "已出线大概率轮换，但替补阵容仍具传控压制力" }
+        },
+        "scenario_summary": "德国6分已出线大概率轮换；厄瓜多尔1分必须抢分争小组第二",
+        "game_theory_adjustment": "德国C+I轮换但替补实力仍强；厄瓜多尔A生死战+F平行库拉索-科特迪瓦",
         "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：厄瓜多尔-波兰生死战平行",
-        "synergy_scenarios": "F：厄瓜多尔-波兰生死战平行",
+        "cross_match_notes": "F：科特迪瓦赢球则厄瓜多尔须胜且追净胜球",
+        "synergy_scenarios": "F：科特迪瓦赢球则厄瓜多尔须胜且追净胜球",
         "steps_summary": {
-          "step1": "荷兰强",
-          "step2": "C+I",
-          "step3": "控场",
+          "step1": "德国Elo碾压，纯实力0-2",
+          "step2": "德国轮换→1-2",
+          "step3": "厄瓜多尔压上留反击空档",
           "step4": "纽约",
-          "step5": "2-0",
-          "step6": "F",
-          "step7": "4"
+          "step5": "1-2",
+          "step6": "F：科特迪瓦场平行",
+          "step7": "置信度4"
         }
       },
       "actual_result": null
     },
     {
-      "id": "2026-GROUP-E-R3-GER-CRC",
-      "home": "Germany",
-      "away": "Costa Rica",
-      "home_code": "GER",
-      "away_code": "CRC",
+      "id": "2026-GROUP-E-R3-CUW-CIV",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "home_code": "CUW",
+      "away_code": "CIV",
       "group": "E",
       "round": "Group Stage R3",
       "datetime_cst": "2026-06-26T04:00:00+08:00",
-      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "venue": "Lincoln Financial Field, Philadelphia",
       "status": "predicted",
       "phase": "group_r3",
-      "dominant_factor": "balanced",
+      "dominant_factor": "strength",
       "confidence": 4,
       "prediction": {
-        "most_likely_score": "3-0",
-        "most_likely_probability": 22.6,
-        "pure_strength_score": "3-0",
-        "game_theory_score": "2-0",
+        "most_likely_score": "0-2",
+        "most_likely_probability": 24.8,
+        "pure_strength_score": "0-2",
+        "game_theory_score": "1-2",
         "score_distribution": [
-          {
-            "score": "3-0",
-            "probability": 22.6,
-            "reason": "A+O必须大胜"
-          },
-          {
-            "score": "2-0",
-            "probability": 20.4,
-            "reason": "领先后收手风险"
-          },
-          {
-            "score": "4-0",
-            "probability": 14.8,
-            "reason": "刷净胜球"
-          },
-          {
-            "score": "3-1",
-            "probability": 13.2,
-            "reason": "有失球仍胜"
-          },
-          {
-            "score": "2-1",
-            "probability": 11.6,
-            "reason": "哥斯达黎加偷球"
-          },
-          {
-            "score": "1-0",
-            "probability": 8.4,
-            "reason": "低效（M因素）"
-          },
-          {
-            "score": "5-0",
-            "probability": 5.2,
-            "reason": "全面压制"
-          },
-          {
-            "score": "0-0",
-            "probability": 3.8,
-            "reason": "极低"
-          }
+          { "score": "0-2", "probability": 24.8, "reason": "科特迪瓦实力+争第二" },
+          { "score": "1-2", "probability": 20.6, "reason": "赢球但有失球" },
+          { "score": "0-1", "probability": 18.4, "reason": "经济型小胜" },
+          { "score": "0-3", "probability": 12.2, "reason": "科特迪瓦压上" },
+          { "score": "1-1", "probability": 10.8, "reason": "平局亦够出线" },
+          { "score": "1-0", "probability": 7.2, "reason": "库拉索冷门" },
+          { "score": "0-0", "probability": 4.0, "reason": "僵局" },
+          { "score": "1-3", "probability": 2.0, "reason": "对攻" }
         ],
-        "win_draw_loss": {
-          "home": 81.2,
-          "draw": 3.8,
-          "away": 15.0
-        }
+        "win_draw_loss": { "home": 8.4, "draw": 14.8, "away": 76.8 }
       },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 36,
-        "game_theory_pct": 28,
-        "synergy_pct": 18,
-        "path_pct": 4,
-        "player_pct": 8,
-        "external_pct": 3,
-        "conversion_pct": 3
-      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 40, "game_theory_pct": 26, "synergy_pct": 18, "path_pct": 5, "player_pct": 4, "external_pct": 3, "conversion_pct": 4 },
       "analysis": {
-        "scenario": [
-          "A",
-          "O",
-          "F"
-        ],
-        "scenario_summary": "德国1分必须大胜；哥斯达黎加已淘汰；O舆论反弹",
-        "game_theory_adjustment": "O：德国前两轮差需正名+大胜争第三；L关闭G收手",
+        "scenario": ["B", "F"],
+        "team_profiles": {
+          "home": { "style": "偏防守", "pace": "慢", "tags": ["密集防守", "低控球"], "summary": "已出局，以死守+长传为主，进攻威胁有限" },
+          "away": { "style": "攻守均衡", "pace": "快", "tags": ["身体对抗", "边路速度"], "summary": "3分平局即可出线，可控场不必冒险大胜" }
+        },
+        "scenario_summary": "科特迪瓦3分平局即可保出线；库拉索已出局",
+        "game_theory_adjustment": "B：科特迪瓦可接受平局；F平行厄瓜多尔-德国影响净胜球需求",
         "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：日本-西班牙平行，德国须赢且看净胜球",
-        "synergy_scenarios": "F：日本-西班牙平行，德国须赢且看净胜球",
+        "cross_match_notes": "F：与厄瓜多尔-德国同开",
+        "synergy_scenarios": "F：与厄瓜多尔-德国同开",
         "steps_summary": {
-          "step1": "德国实力碾压",
-          "step2": "A+O",
-          "step3": "高压进攻",
-          "step4": "亚特兰大",
-          "step5": "3-0",
-          "step6": "F日本场",
+          "step1": "科特迪瓦实力优",
+          "step2": "B+F",
+          "step3": "控场反击",
+          "step4": "费城",
+          "step5": "0-2",
+          "step6": "F平行",
           "step7": "4"
         }
       },
       "actual_result": null
     },
     {
-      "id": "2026-GROUP-E-R3-JPN-ESP",
-      "home": "Japan",
-      "away": "Spain",
-      "home_code": "JPN",
-      "away_code": "ESP",
-      "group": "E",
+      "id": "2026-GROUP-F-R3-TUN-NED",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "home_code": "TUN",
+      "away_code": "NED",
+      "group": "F",
       "round": "Group Stage R3",
-      "datetime_cst": "2026-06-26T04:00:00+08:00",
-      "venue": "Gillette Stadium, Boston",
+      "datetime_cst": "2026-06-26T07:00:00+08:00",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "status": "predicted",
+      "phase": "group_r3",
+      "dominant_factor": "strength",
+      "confidence": 4,
+      "prediction": {
+        "most_likely_score": "0-2",
+        "most_likely_probability": 25.4,
+        "pure_strength_score": "0-3",
+        "game_theory_score": "0-2",
+        "score_distribution": [
+          { "score": "0-2", "probability": 25.4, "reason": "荷兰轮换仍强" },
+          { "score": "0-3", "probability": 22.8, "reason": "纯实力碾压" },
+          { "score": "0-1", "probability": 17.6, "reason": "荷兰收手" },
+          { "score": "1-2", "probability": 12.4, "reason": "突尼斯偷球" },
+          { "score": "0-4", "probability": 8.6, "reason": "荷兰全开" },
+          { "score": "1-3", "probability": 6.2, "reason": "对攻" },
+          { "score": "0-0", "probability": 4.8, "reason": "全替补保守" },
+          { "score": "1-0", "probability": 2.2, "reason": "大冷" }
+        ],
+        "win_draw_loss": { "home": 3.0, "draw": 4.8, "away": 92.2 }
+      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 46, "game_theory_pct": 20, "synergy_pct": 14, "path_pct": 5, "player_pct": 7, "external_pct": 4, "conversion_pct": 4 },
+      "analysis": {
+        "scenario": ["B", "C", "I", "F"],
+        "team_profiles": {
+          "home": { "style": "偏防守", "pace": "中", "tags": ["低位退守", "防线漏洞"], "summary": "已淘汰战意低，前两轮丢9球，防守组织松散" },
+          "away": { "style": "偏进攻", "pace": "快", "tags": ["全攻全守", "高位压迫"], "summary": "4分打平即出线，可轮换但仍保持压迫强度" }
+        },
+        "scenario_summary": "荷兰4分打平即出线；突尼斯0分已出局",
+        "game_theory_adjustment": "荷兰B+C+I轮换；F平行日本-瑞典，荷兰小胜即可保头名",
+        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
+        "cross_match_notes": "F：日本-瑞典结果影响荷兰是否须争胜",
+        "synergy_scenarios": "F：日本-瑞典结果影响荷兰是否须争胜",
+        "steps_summary": {
+          "step1": "荷兰实力碾压",
+          "step2": "轮换→0-2",
+          "step3": "突尼斯无战意",
+          "step4": "堪萨斯城",
+          "step5": "0-2",
+          "step6": "F：日本场",
+          "step7": "4"
+        }
+      },
+      "actual_result": null
+    },
+    {
+      "id": "2026-GROUP-F-R3-JPN-SWE",
+      "home": "Japan",
+      "away": "Sweden",
+      "home_code": "JPN",
+      "away_code": "SWE",
+      "group": "F",
+      "round": "Group Stage R3",
+      "datetime_cst": "2026-06-26T07:00:00+08:00",
+      "venue": "AT&T Stadium, Dallas",
       "status": "predicted",
       "phase": "group_r3",
       "dominant_factor": "game_theory",
       "confidence": 3,
       "prediction": {
-        "most_likely_score": "1-1",
-        "most_likely_probability": 21.4,
-        "pure_strength_score": "1-2",
+        "most_likely_score": "2-1",
+        "most_likely_probability": 21.2,
+        "pure_strength_score": "2-1",
         "game_theory_score": "1-1",
         "score_distribution": [
-          {
-            "score": "1-1",
-            "probability": 21.4,
-            "reason": "B+平局双赢"
-          },
-          {
-            "score": "0-1",
-            "probability": 19.8,
-            "reason": "西班牙小胜"
-          },
-          {
-            "score": "1-2",
-            "probability": 17.6,
-            "reason": "纯实力"
-          },
-          {
-            "score": "0-0",
-            "probability": 14.2,
-            "reason": "保守"
-          },
-          {
-            "score": "1-0",
-            "probability": 11.8,
-            "reason": "日本冷"
-          },
-          {
-            "score": "2-1",
-            "probability": 8.4,
-            "reason": "日本胜"
-          },
-          {
-            "score": "0-2",
-            "probability": 4.8,
-            "reason": "西班牙胜"
-          },
-          {
-            "score": "2-2",
-            "probability": 2.0,
-            "reason": "对攻"
-          }
+          { "score": "2-1", "probability": 21.2, "reason": "日本反击+瑞典必须赢" },
+          { "score": "1-1", "probability": 20.4, "reason": "B+平局双方可接受" },
+          { "score": "1-0", "probability": 17.8, "reason": "日本经济型胜" },
+          { "score": "2-2", "probability": 13.6, "reason": "瑞典压上后对攻" },
+          { "score": "1-2", "probability": 11.4, "reason": "瑞典反扑" },
+          { "score": "0-1", "probability": 8.2, "reason": "瑞典冷胜" },
+          { "score": "3-1", "probability": 4.8, "reason": "日本大胜" },
+          { "score": "0-0", "probability": 2.6, "reason": "僵局" }
         ],
-        "win_draw_loss": {
-          "home": 22.0,
-          "draw": 35.6,
-          "away": 42.4
+        "win_draw_loss": { "home": 43.8, "draw": 23.0, "away": 33.2 }
+      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 30, "game_theory_pct": 36, "synergy_pct": 22, "path_pct": 4, "player_pct": 4, "external_pct": 2, "conversion_pct": 2 },
+      "analysis": {
+        "scenario": ["A", "B+", "F", "Q"],
+        "team_profiles": {
+          "home": { "style": "攻守均衡", "pace": "快", "tags": ["快速转换", "纪律防守"], "summary": "控球耐心+瞬间提速，小组赛仅丢2球，反击效率高" },
+          "away": { "style": "偏进攻", "pace": "中", "tags": ["高空轰炸", "必须赢时压上"], "summary": "伊萨克支点+传中威胁，末轮须强攻，后防可能留空档" }
+        },
+        "scenario_summary": "瑞典3分必须赢；日本4分平局或胜均可；F组最复杂协同场",
+        "game_theory_adjustment": "F：若荷兰胜突尼斯，日本平局即可保前二；瑞典A必须进攻→日本反击2-1",
+        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
+        "cross_match_notes": "F：与突尼斯-荷兰同开，日本可观望后者比分",
+        "synergy_scenarios": "F：与突尼斯-荷兰同开，日本可观望后者比分",
+        "steps_summary": {
+          "step1": "日本略优，纯实力2-1",
+          "step2": "瑞典A vs 日本B+",
+          "step3": "瑞典压上日本反击",
+          "step4": "达拉斯",
+          "step5": "2-1",
+          "step6": "F+Q",
+          "step7": "3"
         }
       },
-      "weight_breakdown": {
-        "strength": 0.28,
-        "game_theory": 0.28,
-        "synergy": 0.2,
-        "path": 0.08,
-        "player": 0.11,
-        "external": 0.05,
-        "conversion": 0.1
-      },
-      "weight_contributions": {
-        "strength_pct": 28,
-        "game_theory_pct": 36,
-        "synergy_pct": 22,
-        "path_pct": 5,
-        "player_pct": 4,
-        "external_pct": 3,
-        "conversion_pct": 2
-      },
-      "analysis": {
-        "scenario": [
-          "B+",
-          "F",
-          "Q"
+      "actual_result": null
+    },
+    {
+      "id": "2026-GROUP-D-R3-TUR-USA",
+      "home": "Turkey",
+      "away": "United States",
+      "home_code": "TUR",
+      "away_code": "USA",
+      "group": "D",
+      "round": "Group Stage R3",
+      "datetime_cst": "2026-06-26T10:00:00+08:00",
+      "venue": "SoFi Stadium, Los Angeles",
+      "status": "predicted",
+      "phase": "group_r3",
+      "dominant_factor": "strength",
+      "confidence": 4,
+      "prediction": {
+        "most_likely_score": "0-3",
+        "most_likely_probability": 23.8,
+        "pure_strength_score": "0-3",
+        "game_theory_score": "0-2",
+        "score_distribution": [
+          { "score": "0-3", "probability": 23.8, "reason": "美国主场+争三连胜" },
+          { "score": "0-2", "probability": 22.4, "reason": "美国控场收手" },
+          { "score": "0-1", "probability": 16.8, "reason": "经济型胜" },
+          { "score": "1-3", "probability": 12.6, "reason": "土耳其偷球仍败" },
+          { "score": "0-4", "probability": 10.2, "reason": "美国全面压制" },
+          { "score": "1-2", "probability": 7.4, "reason": "对攻" },
+          { "score": "0-0", "probability": 4.2, "reason": "美国大幅轮换" },
+          { "score": "1-0", "probability": 2.6, "reason": "土耳其大冷" }
         ],
-        "scenario_summary": "西班牙4分打平即出线；日本3分需分；B+同分可接受平局",
-        "game_theory_adjustment": "B+：西班牙可接受平局；日本需赢但西班牙控场强→1-1",
+        "win_draw_loss": { "home": 3.2, "draw": 4.2, "away": 92.6 }
+      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 38, "game_theory_pct": 28, "synergy_pct": 12, "path_pct": 6, "player_pct": 8, "external_pct": 5, "conversion_pct": 3 },
+      "analysis": {
+        "scenario": ["C", "O", "F"],
+        "team_profiles": {
+          "home": { "style": "偏进攻", "pace": "中", "tags": ["控球主导", "射门转化差"], "summary": "前两轮62射0球，已出局，控球多但终结极差" },
+          "away": { "style": "偏进攻", "pace": "快", "tags": ["主场气势", "高位逼抢"], "summary": "6分已出线但追求小组赛三连胜，压迫强度高" }
+        },
+        "scenario_summary": "美国6分已出线但波切蒂诺目标队史首次小组赛三连胜",
+        "game_theory_adjustment": "C+O：美国虽出线仍全力；土耳其0分已淘汰",
         "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
-        "cross_match_notes": "F：德国-哥斯达黎加平行，日本赢球也可能不够净胜球",
-        "synergy_scenarios": "F：德国-哥斯达黎加平行，日本赢球也可能不够净胜球",
+        "cross_match_notes": "F：与巴拉圭-澳大利亚平行，不影响美国",
+        "synergy_scenarios": "F：与巴拉圭-澳大利亚平行，不影响美国",
         "steps_summary": {
-          "step1": "西班牙强",
-          "step2": "B++F",
-          "step3": "西班牙控球",
-          "step4": "波士顿",
-          "step5": "1-1",
-          "step6": "Q第三",
+          "step1": "美国主场强",
+          "step2": "O三连胜动力",
+          "step3": "高压进攻",
+          "step4": "洛杉矶SoFi",
+          "step5": "0-3",
+          "step6": "F平行",
+          "step7": "4"
+        }
+      },
+      "actual_result": null
+    },
+    {
+      "id": "2026-GROUP-D-R3-PRY-AUS",
+      "home": "Paraguay",
+      "away": "Australia",
+      "home_code": "PRY",
+      "away_code": "AUS",
+      "group": "D",
+      "round": "Group Stage R3",
+      "datetime_cst": "2026-06-26T10:00:00+08:00",
+      "venue": "Levi's Stadium, San Francisco",
+      "status": "predicted",
+      "phase": "group_r3",
+      "dominant_factor": "game_theory",
+      "confidence": 3,
+      "prediction": {
+        "most_likely_score": "1-2",
+        "most_likely_probability": 22.4,
+        "pure_strength_score": "1-1",
+        "game_theory_score": "1-2",
+        "score_distribution": [
+          { "score": "1-2", "probability": 22.4, "reason": "澳大利亚净胜球优+必须赢" },
+          { "score": "0-1", "probability": 19.8, "reason": "澳大利亚经济型胜" },
+          { "score": "1-1", "probability": 17.6, "reason": "僵局双方谨慎" },
+          { "score": "0-2", "probability": 14.2, "reason": "澳大利亚控场" },
+          { "score": "2-2", "probability": 10.4, "reason": "对攻平局" },
+          { "score": "2-1", "probability": 8.6, "reason": "巴拉圭主场冷" },
+          { "score": "0-0", "probability": 4.2, "reason": "保守" },
+          { "score": "1-0", "probability": 2.8, "reason": "巴拉圭胜" }
+        ],
+        "win_draw_loss": { "home": 11.4, "draw": 21.8, "away": 66.8 }
+      },
+      "weight_breakdown": { "strength": 0.28, "game_theory": 0.28, "synergy": 0.2, "path": 0.08, "player": 0.11, "external": 0.05, "conversion": 0.1 },
+      "weight_contributions": { "strength_pct": 28, "game_theory_pct": 38, "synergy_pct": 20, "path_pct": 6, "player_pct": 3, "external_pct": 3, "conversion_pct": 2 },
+      "analysis": {
+        "scenario": ["A", "F", "Q"],
+        "team_profiles": {
+          "home": { "style": "偏防守", "pace": "慢", "tags": ["南美韧劲", "低位反击"], "summary": "防守组织紧凑，依赖反击与定位球，末轮必须抢分" },
+          "away": { "style": "攻守均衡", "pace": "中", "tags": ["英式硬朗", "定位球"], "summary": "对抗强度高，战术直接，净胜球占优，末轮更倾向主动" }
+        },
+        "scenario_summary": "胜者以D组第二直接晋级32强；双方同3分，澳大利亚净胜球占优",
+        "game_theory_adjustment": "双A生死战+F同开；澳大利亚平局可能不够，须争胜",
+        "sequence_notes": "R3同轮开球→K关闭，启用F+Q协同博弈",
+        "cross_match_notes": "F：与美国-土耳其同开；胜者对阵G组第二名",
+        "synergy_scenarios": "F：与美国-土耳其同开；胜者对阵G组第二名",
+        "steps_summary": {
+          "step1": "实力接近1-1",
+          "step2": "双A+F",
+          "step3": "澳大利亚反击",
+          "step4": "旧金山",
+          "step5": "1-2",
+          "step6": "Q第三备选",
           "step7": "3"
         }
       },
       "actual_result": null
     }
   ],
-  "notes": "R3第三轮：K关闭，F+Q协同；v2.1权重；6/25 A/B/C六场+6/26 D/E四场"
+  "skipped": [],
+  "notes": "已修正6/26赛程：D/E/F组第三轮6场（来源worldcup2026cn.com）；此前错误的D/E对阵已删除"
 }

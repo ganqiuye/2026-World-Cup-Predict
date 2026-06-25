@@ -2,20 +2,22 @@
   "comment": "球队实力指数 0-100，用于淘汰赛路径胜率估算",
   "ratings": {
     "BRA": 92, "ARG": 91, "FRA": 90, "ENG": 88, "ESP": 87, "GER": 86,
-    "POR": 85, "NED": 84, "BEL": 83, "COL": 80, "MAR": 78, "MEX": 76,
-    "SUI": 75, "CAN": 74, "JPN": 74, "USA": 73, "AUT": 72, "NOR": 71,
-    "SEN": 70, "CRO": 69, "SCO": 68, "GHA": 67, "KOR": 66, "ECU": 65,
-    "PER": 64, "POL": 64, "URU": 63, "UKR": 62, "CZE": 61, "AUT": 72,
-    "NGA": 60, "CMR": 59, "COD": 58, "EGY": 57, "IRN": 57, "TUN": 56,
+    "POR": 85, "NED": 84, "BEL": 83, "USA": 78, "COL": 80, "MAR": 78, "MEX": 76,
+    "SUI": 75, "CAN": 74, "JPN": 74, "SWE": 72, "AUT": 72, "NOR": 71,
+    "CIV": 68, "ECU": 65, "AUS": 64, "PRY": 63, "TUR": 58, "TUN": 52, "CUW": 48,
     "ALG": 55, "JOR": 48, "UZB": 47, "PAN": 46, "QAT": 45, "BIH": 44,
-    "IRQ": 43, "HAI": 38, "RSA": 52, "CRC": 50
+    "IRQ": 43, "HAI": 38, "RSA": 52, "CRC": 50, "SEN": 70, "CRO": 69,
+    "SCO": 68, "GHA": 67, "KOR": 66, "COD": 58, "CZE": 61
   },
   "by_name": {
     "Brazil": 92, "Argentina": 91, "France": 90, "England": 88, "Spain": 87,
     "Germany": 86, "Portugal": 85, "Colombia": 80, "Morocco": 78, "Mexico": 76,
     "Switzerland": 75, "Canada": 74, "South Korea": 66, "Austria": 72,
+    "Netherlands": 84, "United States": 78, "Japan": 74, "Sweden": 72,
+    "Ivory Coast": 68, "Ecuador": 65, "Australia": 64, "Paraguay": 63,
+    "Turkey": 58, "Tunisia": 52, "Curaçao": 48,
     "Norway": 71, "Senegal": 70, "Croatia": 69, "Scotland": 68, "Ghana": 67,
-    "Japan": 74, "Jordan": 48, "Algeria": 55, "Uzbekistan": 47, "Panama": 46,
+    "Jordan": 48, "Algeria": 55, "Uzbekistan": 47, "Panama": 46,
     "Qatar": 45, "Bosnia and Herzegovina": 44, "Iraq": 43, "Haiti": 38,
     "South Africa": 52, "Czechia": 61, "DR Congo": 58
   }

@@ -168,6 +168,47 @@
     return `<div class="detail-section"><h3>球员因素（L）</h3><ul class="factor-list">${rows}</ul></div>`;
   }
 
+  function styleClass(style) {
+    if (!style) return "balanced";
+    if (style.includes("进攻")) return "attack";
+    if (style.includes("防守")) return "defense";
+    if (style.includes("反击")) return "counter";
+    return "balanced";
+  }
+
+  function getTeamProfile(code, sideProfiles) {
+    if (sideProfiles) return sideProfiles;
+    const central = WC_DATA.teamProfiles?.profiles || {};
+    return central[code] || null;
+  }
+
+  function renderTeamProfileCard(nameZh, code, profile) {
+    if (!profile) return "";
+    const pace = profile.pace ? ` · 节奏${profile.pace}` : "";
+    const tags = (profile.tags || []).map(t =>
+      `<span class="team-profile-tag">${esc(t)}</span>`
+    ).join("");
+    return `<div class="team-profile-card">
+      <h4>${flag(code)} ${esc(nameZh)}</h4>
+      <span class="team-profile-style ${styleClass(profile.style)}">${esc(profile.style || "攻守均衡")}${pace}</span>
+      ${tags ? `<div class="team-profile-tags">${tags}</div>` : ""}
+      <p class="team-profile-summary">${esc(profile.summary || "")}</p>
+    </div>`;
+  }
+
+  function renderTeamProfiles(homeCode, awayCode, homeZh, awayZh, profiles) {
+    const homeP = getTeamProfile(homeCode, profiles?.home);
+    const awayP = getTeamProfile(awayCode, profiles?.away);
+    if (!homeP && !awayP) return "";
+    return `<div class="detail-section">
+      <h3>⚽ 双方球队特点</h3>
+      <div class="team-profiles">
+        ${renderTeamProfileCard(homeZh, homeCode, homeP)}
+        ${renderTeamProfileCard(awayZh, awayCode, awayP)}
+      </div>
+    </div>`;
+  }
+
   function renderMatchCard(m, i) {
     const st = matchStatus(m);
     const pred = state.predictionMap[m.id];
@@ -384,6 +425,7 @@
         <div class="detail-section analysis-box">
           <h3>📋 预测分析原因 <span class="legend-inline-hint">悬停代号查看释义</span></h3>
           ${scenarioTags ? `<div class="scenario-tags">${scenarioTags}</div>` : ""}
+          ${renderTeamProfiles(m.home_code, m.away_code, homeZh, awayZh, a.team_profiles)}
           <p class="analysis-reason">${esc(a.scenario_summary || "暂无情景摘要")}</p>
           ${a.game_theory_adjustment ? `<p class="analysis-note gold">${esc(a.game_theory_adjustment)}</p>` : ""}
           ${a.sequence_notes ? `<p class="analysis-note"><strong>赛序传导（K）：</strong>${esc(a.sequence_notes)}</p>` : ""}

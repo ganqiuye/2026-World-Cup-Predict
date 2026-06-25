@@ -414,7 +414,57 @@ body {
 }
 
 .analysis-note.gold { color: var(--gold); }
-.analysis-note.muted { color: var(--gray); font-size: 0.78rem; }
+.analysis-note.muted { color: var(--text-muted); font-size: 0.78rem; }
+
+.team-profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+@media (max-width: 520px) {
+  .team-profiles { grid-template-columns: 1fr; }
+}
+.team-profile-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.team-profile-card h4 {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.team-profile-style {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+.team-profile-style.attack { background: rgba(255, 123, 114, 0.18); color: #ff7b72; }
+.team-profile-style.defense { background: rgba(56, 139, 253, 0.18); color: var(--blue); }
+.team-profile-style.balanced { background: rgba(163, 113, 247, 0.18); color: #a371f7; }
+.team-profile-style.counter { background: rgba(57, 211, 83, 0.15); color: #39d353; }
+.team-profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+.team-profile-tag {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+}
+.team-profile-summary {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
 
 .scenario-tags { margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
 
